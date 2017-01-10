@@ -17,7 +17,7 @@ param
     [ValidateScript({Test-Path -Path $_})]
     [String]$TemplatePath = "$PSScriptRoot\PSATPlasterTemplate",
 
-    [String]$DestinationPath = "$PSScriptRoot\DemoApplication"
+    [String]$DestinationPath = "$PSScriptRoot\DemoTemplateTest"
 )
 
 Try
