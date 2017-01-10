@@ -7,11 +7,19 @@ The PowerShell App Deployment Toolkit is a wrapper Toolkit for deploying applica
 [PSAppDeployToolkit](http://psappdeploytoolkit.com/)
 
 
-## Demo
+## Demo Scripts
 
-To Download the latest Toolkit you can use the **DownloadToolkit.ps1** Script included in the Repository.
-To Test out the Plaster Template use the **InvokePlasterExample.ps1** Script that uses the Plaster Template in **PSATPlasterTemplate**.
-This Template is complete except for any environment specific changes you may need.
+* To Download the latest Toolkit you can use the **DownloadToolkit.ps1** Script included in the Repository.
+* To Test out the Plaster Template use the **InvokePlasterExample.ps1** Script that uses the Plaster Template in **PSATPlasterTemplate**. This Template is complete except for any environment specific changes you may need.
+* To view the external Help console Application you can use the **OpenHelpExternal.ps1** Script.
+* The **Examples.ps1** Script contains most of the examples covered. Invoke-Demo in the script` is a wrapper that executes the **DemoApplication** with a Custom Param for the Demo Name. Example Below:
+
+```powershell
+Invoke-Demo -DeployMode Interactive -Demo WelcomeAllowDefer
+
+Invoke-Demo -DeployMode NonInteractive -Demo NonInteractive
+```
+
 
 
 
