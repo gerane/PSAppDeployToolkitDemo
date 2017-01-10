@@ -1,8 +1,19 @@
 # PowerShell App Deployment Toolkit
 
+URL to Demo Files [https://github/gerane/PSAppDeployToolkitDemo](https://github/gerane/PSAppDeployToolkitDemo)
+
 The PowerShell App Deployment Toolkit is a wrapper Toolkit for deploying applications in an Enterprise. For more information see the link below:
 
 [PSAppDeployToolkit](http://psappdeploytoolkit.com/)
+
+
+## Demo
+
+To Download the latest Toolkit you can use the **DownloadToolkit.ps1** Script included in the Repository.
+To Test out the Plaster Template use the **InvokePlasterExample.ps1** Script that uses the Plaster Template in **PSATPlasterTemplate**.
+This Template is complete except for any environment specific changes you may need.
+
+
 
 ## Features
 
