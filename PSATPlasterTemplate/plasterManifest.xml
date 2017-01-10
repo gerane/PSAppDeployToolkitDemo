@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+	schemaVersion="0.4" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+	<metadata>
+		<name>NewPSAppDeployToolkit</name>
+		<id>1d68ec6f-29da-4766-a11f-9d97ac9f0a8f</id>
+		<version>1.0.0</version>
+		<title>New PowerShell App Deployment Toolkit</title>
+		<description>Template to scaffold a PowerShell App Deployment Toolkit Project</description>
+		<author>Brandon Padgett</author>
+		<tags>PSAppDeployToolkit, Plaster, Template</tags>
+	</metadata>
+
+	<parameters>
+        <parameter name='ToolkitName'
+                   type='text'
+                   prompt='Enter the name of the Toolkit'/>
+
+        <parameter name='AppVersion'
+                   type='text'
+                   default='1.0.0'
+                   store='text'
+                   prompt='Enter the Version Number for the Application'/>
+
+        <parameter name='Vendor'
+                   type='text'
+                   store='text'
+                   prompt='Please Enter the Vendor Name'/>
+
+        <parameter name='Author'
+                   type='text'
+                   store='text'
+                   prompt='Enter the Author Name'/>
+
+        <parameter name='DeployMode'
+                   type='choice'
+                   default='1'
+                   store='text'
+                   prompt='Select the Default Deployment Mode for the DeployMode Parameter.'>
+            <choice label='&amp;Interactive Mode'
+                    help="Sets Toolkit to Interactive Mode."
+                    value="Interactive"/>
+            <choice label='&amp;NonInteractive Mode'
+                    help="Sets Toolkit to NonInteractive Mode.."
+                    value="NonInteractive"/>
+            <choice label='&amp;Silent'
+                    help="Sets Toolkit to Silent Mode."
+                    value="Silent"/>
+        </parameter>
+    </parameters>
+
+    <content>
+        <file source='Toolkit\**'
+              destination='Toolkit'/>
+
+        <templateFile source='Toolkit\Deploy-Application.ps1'
+                      destination='Toolkit\Deploy-Application.ps1'/>
+    </content>
+</plasterManifest>
