@@ -17,15 +17,15 @@ param
     [ValidateScript({Test-Path -Path $_})]
     [String]$TemplatePath = "$PSScriptRoot\PSATPlasterTemplate",
 
-    [String]$DestinationPath = "$PSScriptRoot\DemoApplication"
+    [String]$DestinationPath = "$PSScriptRoot\DemoTemplateTest"
 )
 
 Try
 {
-    If (! (Get-Module -Name "Plaster" -ListAvailable))
-    {
-        Install-Module -Name Plaster
-    }
+    # If (! (Get-Module -Name "Plaster" -ListAvailable))
+    # {
+    #     Install-Module Plaster
+    # }
 
     Invoke-Plaster -TemplatePath $TemplatePath -DestinationPath $DestinationPath
 }

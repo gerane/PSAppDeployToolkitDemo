@@ -70,13 +70,13 @@ Invoke-Demo -Demo Silent -DeployMode Silent
 Invoke-Demo -Demo LogOutput
 
 # Example Log with Information Severity
-Invoke-Demo -Demo Severity1
+Invoke-Demo -Demo LogSeverity1
 
 # Example Log with Warning Severity
-Invoke-Demo -Demo Severity2
+Invoke-Demo -Demo LogSeverity2
 
 # Example Log with Error Severity
-Invoke-Demo -Demo Severity3
+Invoke-Demo -Demo LogSeverity3
 
 # Example with deployAppScriptFriendlyName Source
 Invoke-Demo -Demo LogSource
