@@ -1,6 +1,6 @@
 # PowerShell App Deployment Toolkit
 
-URL to Demo Files [https://github/gerane/PSAppDeployToolkitDemo](https://github/gerane/PSAppDeployToolkitDemo)
+URL to Demo Files [https://github.com/gerane/PSAppDeployToolkitDemo](https://github.com/gerane/PSAppDeployToolkitDemo)
 
 The PowerShell App Deployment Toolkit is a wrapper Toolkit for deploying applications in an Enterprise. For more information see the link below:
 

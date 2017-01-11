@@ -22,10 +22,10 @@ param
 
 Try
 {
-    If (! (Get-Module -Name "Plaster" -ListAvailable))
-    {
-        Install-Module -Name Plaster
-    }
+    # If (! (Get-Module -Name "Plaster" -ListAvailable))
+    # {
+    #     Install-Module Plaster
+    # }
 
     Invoke-Plaster -TemplatePath $TemplatePath -DestinationPath $DestinationPath
 }
